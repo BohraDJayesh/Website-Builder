@@ -3,20 +3,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width, initial-scale=1.0">
+
+    {% comment %} Grapes.js Script and css file {% endcomment %}
+    <link rel="stylesheet" href="//unpkg.com/grapesjs/dist/css/grapes.min.css">
+    <script src="https://unpkg.com/grapesjs@0.18.4/dist/grapes.min.js"></script>
+
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+     
+{% comment %}    
+    {% load bootstrap3 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+{% endcomment %}
+
+
+
+    
     {%block links%}
 
     {%endblock links%}
     
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+
 
     <title>Website Builder </title>
 </head>
 <body>
-
+   
 {% block body %}
 
 {% endblock body %} 
+
+
 
 </body>
 </html>

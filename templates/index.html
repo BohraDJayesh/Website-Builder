@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 
 
-
 {%block links%}
 {% comment %} 
 # this comment section  add all links in this Block
@@ -15,6 +14,18 @@
 {% comment %} 
 # this comment section  add body code in this body block
 {% endcomment %}
-    <h1>Hey Jayesh</h1>
+
+<div  class="parent_builder">
+    <div class="panel__top">
+        <div class="panel__basic-actions"></div>
+    </div>
+    <div id="gjs">
+        <h1>Hello World Component!</h1>
+    </div>
+    <div id="blocks"></div>
+</div>
+{% load static %}
+<script src="{%static 'JavaScript/script.js'%} "></script>
+
 
 {% endblock body %}

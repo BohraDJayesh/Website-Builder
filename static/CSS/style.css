@@ -1,0 +1,80 @@
+
+/* ---------------------------------- style for the editor --------------------*/
+/* .parent_builder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocks{
+  width: 15%;
+  height: 100vh;
+}
+#style-manager{
+  width: 70%;
+  height: 100vh;
+}
+#gjs{
+  width: 70%;
+  height: 100vh;
+  
+}
+
+.gjs-cv-canvas {
+  top: 0;
+  width: 100%;
+  height: 100%;
+} 
+
+.parent_builder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blocks{
+  width: 15%;
+  height: 100vh;
+}
+#style-manager{
+  width: 70%;
+  height: 100vh;
+}
+#gjs{
+  width: 70%;
+  height: 100vh;
+  
+}
+
+.gjs-cv-canvas {
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+*/
+/* Let's highlight canvas boundaries */
+#gjs {
+  border: 3px solid #444;
+}
+
+/* Reset some default styling */
+.gjs-cv-canvas {
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.gjs-block {
+  width: auto;
+  height: auto;
+  min-height: auto;
+}
+
+.panel__top {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  position: initial;
+  justify-content: center;
+  justify-content: space-between;
+}
+.panel__basic-actions {
+  position: initial;
+}
