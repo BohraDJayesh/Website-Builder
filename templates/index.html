@@ -5,6 +5,8 @@
 {% comment %} 
 # this comment section  add all links in this Block
 {% endcomment %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/style.css' %}" type = "text/css"/>
 
 {%endblock links%}
 
@@ -14,18 +16,24 @@
 {% comment %} 
 # this comment section  add body code in this body block
 {% endcomment %}
-
-<div  class="parent_builder">
-    <div class="panel__top">
+<div class="panel__top flex justify-between w-full p-4">
         <div class="panel__basic-actions"></div>
+        <div class="panel__devices"></div>
+        <div class="panel__switcher"></div>
     </div>
-    <div id="gjs">
-        <h1>Hello World Component!</h1>
-    </div>
-    <div id="blocks"></div>
+    <div class="parent_builder flex justify-between items-start">
+        <div id="blocks" class="h-full">
+            <div class="layers-container"></div>
+        </div>
+        <div id="gjs" style="height: 500px;">
+            <h1>Hello World Component!</h1>
+        </div>
+        <div class="flex flex-col" id="stylesElements">
+          <div class="traits-container"></div>
+          <div class="styles-container"></div>
+          <div id="stylemanager" class="h-full"></div>
+        </div>
 </div>
-{% load static %}
-<script src="{%static 'JavaScript/script.js'%} "></script>
-
+<script defer type="text/javascript" src="{% static "JavaScript/script.js" %}"></script>
 
 {% endblock body %}
