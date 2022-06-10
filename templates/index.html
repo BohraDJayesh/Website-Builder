@@ -19,7 +19,13 @@
 <div class="panel__top flex justify-between w-full p-4">
         <div class="panel__basic-actions"></div>
         <div class="panel__devices"></div>
-        <div class="panel__switcher"></div>
+        <div class="panel__switcher flex justify-center">
+            <form onsubmit="saveContent(event)">
+                {% csrf_token %}
+            <button class="py-2 px-6 rounded text-white btn bg-blue-500 hover:bg-blue-600 mr-4"onclick="saveContent()">save</button>
+            </form>
+        
+        </div>
     </div>
     <div class="parent_builder flex justify-between items-start">
         <div id="blocks" class="h-full">
