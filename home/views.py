@@ -1,5 +1,6 @@
 from cgitb import html
 import imp
+import re
 from tkinter import PAGES
 from unicodedata import name
 from django.http import HttpResponse
@@ -13,6 +14,9 @@ import json
 
 def index(request):
     return render(request, 'index.html')
+
+def editor(request):
+    return render(request, 'editor.html')
 
 def savePage(request):
     if(request.method=='POST'):
