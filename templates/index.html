@@ -5,6 +5,14 @@
 {% comment %} 
 # this comment section  add all links in this Block
 {% endcomment %}
+<style>
+    .gjs-one-bg {
+        background-color: #1d1e50 !important; 
+      }
+      .gjs-block-label{
+        font-size: .90rem;
+      }
+</style>
 {% load static %}
 <link rel="stylesheet" href="{% static 'CSS/style.css' %}" type = "text/css"/>
 
@@ -22,17 +30,17 @@
         <div class="panel__switcher flex justify-center">
             <form onsubmit="saveContent(event)">
                 {% csrf_token %}
-            <button class="py-2 px-6 rounded text-white btn bg-blue-500 hover:bg-blue-600 mr-4"onclick="saveContent()">save</button>
+            <button class="py-2 px-6 rounded text-white btn bg-[#ec5896] hover:bg-blue-600 mr-4"onclick="saveContent()">save</button>
             </form>
         
         </div>
     </div>
-    <div class="parent_builder flex justify-between items-start">
+    <div class="parent_builder gjs-one-bg flex justify-between items-start">
         <div id="blocks" class="h-full">
             <div class="layers-container"></div>
         </div>
         <div id="gjs" style="height: 500px;">
-            <h1>Hello World Component!</h1>
+            {% comment %} <h1>Hello World Component!</h1> {% endcomment %}
         </div>
         <div class="flex flex-col" id="stylesElements">
           <div class="traits-container"></div>

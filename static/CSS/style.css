@@ -1,7 +1,8 @@
 
     /* Let's highlight canvas boundaries */
     #gjs {
-      border: 3px solid #444;
+      /* border: 3px solid #444; */
+      border: 3px solid #78366a;
   }
   
   /* Reset some default styling */
@@ -11,9 +12,9 @@
       height: 100%;
   }
 
-.parent_builder{
+/* .parent_builder{
 
-}
+} */
 #blocks{
   width: 15%;
 }
@@ -26,3 +27,4 @@
 .gjs-pn-panel{
 position: relative !important;
 }
+

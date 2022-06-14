@@ -139,7 +139,7 @@ const editor = grapesjs.init({
         },
         {
           id:'protfolio-1',
-          label: 'protfolio-1',
+          label: 'Protfolio-1',
           attributes:{class:''},
           content :`<!-- component -->
           <!-- Creaet Blog Portfolio By Joker Banny -->
@@ -351,6 +351,7 @@ editor.Commands.add('set-device-mobile', {
 run: editor => editor.setDevice('Mobile')
 });
 
+// ----------------------- save booton-------------------------
 
 { csrf_token }
 function saveContent(e){
