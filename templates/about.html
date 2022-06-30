@@ -24,9 +24,11 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  {% comment %} <link href="css/style.css" rel="stylesheet" /> {% endcomment %}
+  <link rel="stylesheet" href="{% static 'CSS/cssOfIndex/style.css' %}" type = "text/css"/>
+  
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'CSS/cssOfIndex/responsive.css' %}" type = "text/css"/>
 </head>
 
 <body class="sub_page">
