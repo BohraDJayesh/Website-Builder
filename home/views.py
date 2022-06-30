@@ -18,6 +18,9 @@ def index(request):
 def editor(request):
     return render(request, 'editor.html')
 
+def about(request):
+    return render(request, 'about.html')
+
 def savePage(request):
     if(request.method=='POST'):
         html = request.POST['html']
